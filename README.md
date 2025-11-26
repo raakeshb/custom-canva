@@ -40,6 +40,3 @@ Users only need to enter their **Groq API key** — no installation of models re
 
 ---
 
-## 📸 Screenshots
-_(You can add screenshots here after deployment)_
-
