@@ -1,0 +1,50 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.sqlite3
+
+# ---- Virtual Environments ----
+.env
+.env.*
+.venv
+venv/
+env/
+ENV/
+
+# ---- uv (Astral / Rust-based Python package manager) ----
+.uv/
+.uv_cache/
+.python-version
+pip-wheel-metadata/
+wheelhouse/
+target/
+uv.lock
+*.whl
+
+# ---- Streamlit ----
+.streamlit/secrets.toml
+.streamlit/state.json
+
+# ---- Logs ----
+*.log
+
+# ---- Cache / Temp ----
+*.DS_Store
+*.swp
+.cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- Deployment build artifacts ----
+build/
+dist/
+*.egg-info/

@@ -1,0 +1,12 @@
+langgraph
+langchain
+langchain-ollama
+langchain-groq
+langchain-community
+langchain-tavily
+black
+isort
+pytest
+docker
+streamlit
+tavily-python
