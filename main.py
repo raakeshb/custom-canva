@@ -44,7 +44,7 @@ if st.session_state["alert_message"]:
 # ───────────────────────────────────
 def ensure_api_key() -> bool:
     if not st.session_state["groq_api_key"]:
-        set_alert("🚨 Please enter your Groq API key in the sidebar before generating or updating UI.", "warning")
+        set_alert(" Please enter your Groq API key in the sidebar before generating or updating UI.", "warning")
         return False
     return True
 
@@ -134,7 +134,7 @@ Modify based on:
 left, right = st.columns([1, 1])
 
 with left:
-    st.sidebar.subheader("🔑 Enter your Groq API Key (required)")
+    st.sidebar.subheader(" Enter your Groq API Key (required)")
     user_key = st.sidebar.text_input("Groq API Key", type="password")
     if user_key:
         st.session_state["groq_api_key"] = user_key.strip()
@@ -164,7 +164,7 @@ with left:
 
     if st.session_state.get("html"):
         st.download_button(
-            label="⬇️ Download HTML File",
+            label="Download HTML File",
             data=st.session_state["html"],
             file_name="generated_ui.html",
             mime="text/html"
